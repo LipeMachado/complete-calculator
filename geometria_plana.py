@@ -124,25 +124,25 @@ while rodando != 'termino':
         print('ValueError')
 
     if user == 1:
-        os.system("cls")
+        os.system("cls || clear")
         area_retangulo()
     elif user == 2:
-        os.system("cls")
+        os.system("cls || clear")
         area_quadrado()
     elif user == 3:
-        os.system("cls")
+        os.system("cls || clear")
         area_triangulo()
     elif user == 4:
-        os.system("cls")
+        os.system("cls || clear")
         area_trapezio()
     elif user == 5:
-        os.system("cls")
+        os.system("cls || clear")
         area_losango()
     elif user == 6:
-        os.system("cls")
+        os.system("cls || clear")
         area_circulo()
     elif user == 0:
-        os.system("cls")
+        os.system("cls || clear")
         sleep(0.5)
         print('Voltando..')
         sleep(0.5)

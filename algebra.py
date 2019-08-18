@@ -85,22 +85,22 @@ while rodando != 'terminado':
 	user = int(input('Escolha: '))
 	
 	if user == 1:
-		os.system("cls")
+		os.system("cls || clear")
 		soma()
 	elif user == 2:
-		os.system("cls")
+		os.system("cls || clear")
 		subtracao()
 	elif user == 3:
-		os.system("cls")
+		os.system("cls || clear")
 		multiplicacao()
 	elif user == 4:
-		os.system("cls")
+		os.system("cls || clear")
 		divisao()
 	elif user == 5:
-		os.system("cls")
+		os.system("cls || clear")
 		exponenciacao()
 	elif user == 6:
-		os.system("cls")
+		os.system("cls || clear")
 		raiz_quadrada()
 	elif user == 0:
 		sleep(0.5)

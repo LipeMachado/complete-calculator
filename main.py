@@ -32,10 +32,10 @@ while rodando != 'termino':
         user = int(input('Escolha: '))
 
         if user == 1:
-            os.system("cls")
+            os.system("cls || clear")
             import algebra
         elif user == 2:
-            os.system("cls")
+            os.system("cls || clear")
             import geometria_plana
         elif user == 0:
             sleep(0.5)
