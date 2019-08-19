@@ -27,6 +27,7 @@ while rodando != 'termino':
         print('!!Bem-Vindo!!')
         print('1 - Algebra - Matemática Básica')
         print('2 - Geometria Plana')
+        print('3 - Trigonometria')
         print('0 - Sair')
         Object()
         user = int(input('Escolha: '))
@@ -37,6 +38,9 @@ while rodando != 'termino':
         elif user == 2:
             os.system("cls || clear")
             import geometria_plana
+        elif user == 3:
+            os.system("cls || clear")
+            import trigonometria
         elif user == 0:
             sleep(0.5)
             print('Saindo..... BYE, BYE')

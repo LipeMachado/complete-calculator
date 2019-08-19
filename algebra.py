@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 import os
 from time import sleep
 from math import sqrt
