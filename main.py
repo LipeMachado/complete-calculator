@@ -5,15 +5,11 @@ from time import sleep
 print('-=-'*10)
 sleep(0.2)
 print('Calculadora feita por:')
-sleep(0.3)
 print('@killalone  <-- Telegram')
-sleep(0.3)
 print('@coursesprogrammerandhacker  <-- Canal/Telegram')
-sleep(0.3)
 print('Se inscreva no canal. ^-^')
-sleep(0.3)
 print('Qualquer bug ou dúvida pergunte.')
-sleep(0.3)
+sleep(0.2)
 
 rodando = 'rodando'
 
@@ -42,6 +38,7 @@ while rodando != 'termino':
             os.system("cls || clear")
             import trigonometria
         elif user == 0:
+            
             sleep(0.5)
             print('Saindo..... BYE, BYE')
             sleep(0.55)

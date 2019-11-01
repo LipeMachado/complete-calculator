@@ -80,7 +80,9 @@ while rodando != 'terminado':
         sleep(0.5)
         print('Voltando..')
         sleep(0.5)
-        rodando = 'termino'
+        rodando = 'termino' 
+        os.system("cls || clear")
+        import main
     else:
         Object()
         print('Ops.. Tente novamente!')

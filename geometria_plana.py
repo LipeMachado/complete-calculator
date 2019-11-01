@@ -147,6 +147,8 @@ while rodando != 'termino':
         print('Voltando..')
         sleep(0.5)
         rodando = 'termino'
+        os.system("cls || clear")
+        import main
     else:
         Object()
         print('Ops.. Tente novamente')
