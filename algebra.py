@@ -71,7 +71,19 @@ while rodando != 'terminado':
 		resultado = sqrt(valor_da_raiz)
 		linha()
 		return print(resultado)
+	
+	def fatorial():
+		Object()
+		print('Digite o valor do fatorial.')
+		valor_do_fatorial = int(input(''))
+		contador = 1
+		resultado = 1
 		
+		while contador <= valor_do_fatorial:
+			resultado *= contador
+			contador += 1
+		return print(resultado)
+
 	#main
 	Object()
 	print('!!Opções Disponíveis!!')
@@ -81,6 +93,7 @@ while rodando != 'terminado':
 	print('4 - Divisão')
 	print('5 - Exponenciação/Potenciação')
 	print('6 - Raiz Quadrada')
+	print('7 - Fatorial')
 	print('0 - Voltar')
 	Object()
 	user = int(input('Escolha: '))
@@ -103,6 +116,9 @@ while rodando != 'terminado':
 	elif user == 6:
 		os.system("cls || clear")
 		raiz_quadrada()
+	elif user == 7:
+		os.system("cls || clear")
+		fatorial()
 	elif user == 0:
 		sleep(0.5)
 		print('Voltando..')
