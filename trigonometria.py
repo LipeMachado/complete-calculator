@@ -5,7 +5,7 @@ from math import sin, cos, tan, hypot, pi
 
 rodando = 'rodando'
 
-while rodando != 'terminado':
+while rodando != 'termino':
     def Object():
         print('-=-' * 10)
         sleep(0.5)
@@ -80,7 +80,7 @@ while rodando != 'terminado':
         sleep(0.5)
         print('Voltando..')
         sleep(0.5)
-        rodando = 'termino' 
+        rodando = 'termino'
         os.system("cls || clear")
         import main
     else:

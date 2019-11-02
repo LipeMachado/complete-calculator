@@ -142,7 +142,6 @@ while rodando != 'termino':
         os.system("cls || clear")
         area_circulo()
     elif user == 0:
-        os.system("cls || clear")
         sleep(0.5)
         print('Voltando..')
         sleep(0.5)

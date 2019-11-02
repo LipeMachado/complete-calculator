@@ -38,10 +38,10 @@ while rodando != 'termino':
             os.system("cls || clear")
             import trigonometria
         elif user == 0:
-            
             sleep(0.5)
             print('Saindo..... BYE, BYE')
             sleep(0.55)
+            os.system("cls || clear")
             rodando = 'termino'
         else:
             Object()
