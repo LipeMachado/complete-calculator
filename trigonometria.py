@@ -6,41 +6,54 @@ from math import sin, cos, tan, hypot, pi
 rodando = 'rodando'
 
 while rodando != 'termino':
-    def Object():
-        print('-=-' * 10)
-        sleep(0.5)
 
-    def linha():
-        print('-' * 15)
+    Object = lambda : print('-=-'*10)
+
+    linha = lambda : print('-'*15)
 
     def seno():
         Object()
         print('Digite o número para saber seu Seno:')
-        numero = float(input(''))
+        try:
+            numero = float(input(''))
+        except ValueError:
+            print('ValueError')
         linha()
         return print(f'{sin(numero)}')
 
     def cosseno():
         Object()
         print('Digite o nnúmero para saber seu Cosseno:')
-        numero = float(input(''))
+        try:
+            numero = float(input(''))
+        except ValueError:
+            print('ValueError')
         linha()
         return print(f'{cos(numero)}')
 
     def tangente():
         Object()
         print('Digite o número para saber sua Tangente:')
-        numero = float(input(''))
+        try:
+            numero = float(input(''))
+        except ValueError:
+            print('ValueError')
         linha()
         return print(f'{tan(numero)}')
 
     def hipotenusa():
         Object()
         print('Digite o número do cateto oposto:')
-        cateto_oposto = float(input(''))
+        try:
+            cateto_oposto = float(input(''))
+        except ValueError:
+            print('ValueError')
         sleep(0.5)
         print('Digite o número do cateto adjacente:')
-        cateto_adjacente = float(input(''))
+        try:
+            cateto_adjacente = float(input(''))
+        except ValueError:
+            print('ValueError')
         return print(f'{hypot(cateto_oposto, cateto_adjacente)}')
 
     def numero_de_pi():
@@ -59,7 +72,10 @@ while rodando != 'termino':
     print('5 - Consultar o número de pi')
     print('0 - Voltar')
     Object()
-    user = int(input('Escolha: '))
+    try:
+        user = int(input('Escolha: '))
+    except ValueError:
+            print('ValueError')
 
     if user == 1:
         os.system("cls || clear")

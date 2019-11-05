@@ -6,60 +6,88 @@ from math import sqrt
 rodando = 'rodando'
 
 while rodando != 'terminado':
-	def Object():
-		print('-=-'*10)
-		sleep(0.5)
 	
-	def linha():
-		print('-'*15)
+	Object = lambda : print('-=-'*10)
+	
+	linha = lambda : print('-'*15)
 	
 	def soma():
 		Object()
 		print('Digite o primeiro número para soma.')
-		primeiro_numero = float(input(''))
+		try:
+			primeiro_numero = float(input(''))
+		except ValueError:
+			print('ValueError')
 		print('+')
 		print('Digite o segundo número para soma.')
-		segundo_numero = float(input(''))
+		try:
+			segundo_numero = float(input(''))
+		except ValueError:
+			print('ValueError')
 		linha()
 		return print(primeiro_numero + segundo_numero)
 		
 	def subtracao():
 		Object()
 		print('Digite o primeiro número para subtração.')
-		primeiro_numero = float(input(''))
+		try:
+			primeiro_numero = float(input(''))
+		except ValueError:
+			print('ValueError')
 		print('-')
 		print('Digite o segundo número para subtração.')
-		segundo_numero = float(input(''))
+		try:
+			segundo_numero = float(input(''))
+		except ValueError:
+			print('ValueError')	
 		linha()
 		return print(primeiro_numero - segundo_numero)
 		
 	def multiplicacao():
 		Object()
 		print('Digite o primeiro número para multiplicação.')
-		primeiro_numero = float(input(''))
+		try:
+			primeiro_numero = float(input(''))
+		except ValueError:
+			print('ValueError')
 		print('X')
 		print('Digite o segundo número para multiplicação.')
-		segundo_numero = float(input(''))
+		try:
+			segundo_numero = float(input(''))
+		except ValueError:
+			print('ValueError')
 		linha()
 		return print(primeiro_numero * segundo_numero)
 		
 	def divisao():
 		Object()
 		print('Digite o primeiro número para divisão.')
-		primeiro_numero = float(input(''))
+		try:
+			primeiro_numero = float(input(''))
+		except ValueError:
+			print('ValueError')
 		print('/')
 		print('Digite o segundo número para divisão.')
-		segundo_numero = float(input(''))
+		try:
+			segundo_numero = float(input(''))
+		except ValueError:
+			print('ValueError')	
 		linha()
 		return print(primeiro_numero / segundo_numero)
 		
 	def exponenciacao():
 		Object()
 		print('Digite o primeiro número para exponenciação.')
-		primeiro_numero = float(input(''))
+		try:
+			primeiro_numero = float(input(''))
+		except ValueError:
+			print('ValueError')
 		print('aª')
 		print('Digite o segundo número para exponenciação.')
-		segundo_numero = float(input(''))
+		try:
+			segundo_numero = float(input(''))
+		except ValueError:
+			print('ValueError')
 		linha()
 		return print(primeiro_numero ** segundo_numero)
 		
@@ -67,7 +95,10 @@ while rodando != 'terminado':
 		Object()
 		print('Digite o valor da raiz.')
 		print('√')
-		valor_da_raiz = float(input(''))
+		try:
+			valor_da_raiz = float(input(''))
+		except ValueError:
+			print('ValueError')
 		resultado = sqrt(valor_da_raiz)
 		linha()
 		return print(resultado)
@@ -75,7 +106,10 @@ while rodando != 'terminado':
 	def fatorial():
 		Object()
 		print('Digite o valor do fatorial.')
-		valor_do_fatorial = int(input(''))
+		try:
+			valor_do_fatorial = int(input(''))
+		except ValueError:
+			print('ValueError')
 		contador = 1
 		resultado = 1
 		
@@ -96,7 +130,10 @@ while rodando != 'terminado':
 	print('7 - Fatorial')
 	print('0 - Voltar')
 	Object()
-	user = int(input('Escolha: '))
+	try:
+		user = int(input('Escolha: '))
+	except ValueError:
+		print('ValueError')
 	
 	if user == 1:
 		os.system("cls || clear")

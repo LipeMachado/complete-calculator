@@ -5,12 +5,10 @@ from time import sleep
 rodando = 'rodando'
 
 while rodando != 'termino':
-    def Object():
-        print('-=-'*10)
-        sleep(0.5)
-
-    def linha():
-        print('-'*15)
+    
+    Object = lambda : print('-=-'*10)
+    
+    linha = lambda : print('-'*15)
 
     def area_retangulo():
         Object()

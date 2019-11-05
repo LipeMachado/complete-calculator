@@ -7,3 +7,6 @@ __pycache__/trigonometria.cpython-37.pyc
 __pycache__/geometria_plana.cpython-37.pyc
 __pycache__/main.cpython-37.pyc
 main.py
+algebra.py
+geometria_plana.py
+trigonometria.py
