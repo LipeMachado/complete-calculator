@@ -9,7 +9,11 @@ Quem sabe em logo logo com uma interface <3
 
 # Desenvolvedor
 Felipe Machado
+
 Contato:
+
 Git Hub: https://github.com/LipeMachado
+
 LinkedIn: https://www.linkedin.com/in/felipe-silva-machado-676b70186/
+
 Facebook: Felipe Machado
