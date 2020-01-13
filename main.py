@@ -5,9 +5,9 @@ from time import sleep
 print('-=-'*10)
 sleep(0.2)
 print('Calculadora feita por:')
-print('@LipeMachado  <-- Telegram')
-print('@coursesprogrammerandhacker  <-- Canal/Telegram')
-print('Se inscreva no canal. ^-^')
+print('Telegram:        @LipeMachado')
+print('Canal/Telegram:  @coursesprogrammerandhacker')
+print('GitHub:          LipeMachado')
 print('Qualquer bug ou dúvida pergunte.')
 sleep(0.2)
 
@@ -24,13 +24,13 @@ while rodando != 'termino':
     print('3 - Trigonometria')
     print('0 - Sair')
     Object()
+    
     try:
         user = int(input('Escolha: '))
     except Exception:
         os.system("cls || clear")
         Object()
-        print('O que você digitou???')
-        print('Digite corretamente, por favor.')
+        print('ERROR: Isto que você digitou está incorreto. Digite um número inteiro!')
         
     else:
         if user == 1:
@@ -44,10 +44,11 @@ while rodando != 'termino':
             import trigonometria
         elif user == 0:
             sleep(0.5)
-            print('Saindo..... BYE, BYE')
+            print('Saindo.... BYE, BYE')
             sleep(0.55)
             os.system("cls || clear")
             rodando = 'termino'
         else:
+            os.system("cls || clear")
             Object()
-            print('Ops.. Tente novamente!')
+            print('ERROR: Esta opção não existe!')

@@ -8,7 +8,7 @@ rodando = 'rodando'
 while rodando != 'termino':
 
     Object = lambda : print('-=-'*10)
-
+    
     linha = lambda : print('-'*15)
 
     def seno():
