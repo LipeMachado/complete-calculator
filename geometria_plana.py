@@ -107,7 +107,7 @@ while rodando != 'termino':
     #main
     Object()
     print('!!Opções Disponíveis!!')
-    print('CASO O VALOR SEJA COM VÍRGULA, USE PONTO')
+    print('ATENÇÃO: CASO O VALOR SEJA COM VÍRGULA, USE PONTO')
     print('1 - Área do Retangulo')
     print('2 - Área do Quadrado')
     print('3 - Área do Triangulo')
@@ -118,34 +118,37 @@ while rodando != 'termino':
     Object()
     try:
         user = int(input('Escolha: '))
-    except ValueError:
-        print('ValueError')
-
-    if user == 1:
+    except Exception:
         os.system("cls || clear")
-        area_retangulo()
-    elif user == 2:
-        os.system("cls || clear")
-        area_quadrado()
-    elif user == 3:
-        os.system("cls || clear")
-        area_triangulo()
-    elif user == 4:
-        os.system("cls || clear")
-        area_trapezio()
-    elif user == 5:
-        os.system("cls || clear")
-        area_losango()
-    elif user == 6:
-        os.system("cls || clear")
-        area_circulo()
-    elif user == 0:
-        sleep(0.5)
-        print('Voltando..')
-        sleep(0.5)
-        rodando = 'termino'
-        os.system("cls || clear")
-        import main
-    else:
         Object()
-        print('Ops.. Tente novamente')
+        print('ERROR: Isto que você digitou está incorreto. Digite um número inteiro!')
+    else:
+        if user == 1:
+            os.system("cls || clear")
+            area_retangulo()
+        elif user == 2:
+            os.system("cls || clear")
+            area_quadrado()
+        elif user == 3:
+            os.system("cls || clear")
+            area_triangulo()
+        elif user == 4:
+            os.system("cls || clear")
+            area_trapezio()
+        elif user == 5:
+            os.system("cls || clear")
+            area_losango()
+        elif user == 6:
+            os.system("cls || clear")
+            area_circulo()
+        elif user == 0:
+            sleep(0.5)
+            print('Voltando..')
+            sleep(0.5)
+            rodando = 'termino'
+            os.system("cls || clear")
+            import main
+        else:
+            os.system("cls || clear")
+            Object()
+            print('ERROR: Esta opção não existe!')

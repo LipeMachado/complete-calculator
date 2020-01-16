@@ -65,6 +65,7 @@ while rodando != 'termino':
     #main
     Object()
     print('!!Opções Disponíveis!!')
+    print('ATENÇÃO: CASO O VALOR SEJA COM VÍRGULA, USE PONTO')
     print('1 - Seno do número em radiano')
     print('2 - Cosseno do número em radiano')
     print('3 - Tangente do número em raiano')
@@ -74,31 +75,34 @@ while rodando != 'termino':
     Object()
     try:
         user = int(input('Escolha: '))
-    except ValueError:
-            print('ValueError')
-
-    if user == 1:
-        os.system("cls || clear")
-        seno()
-    elif user == 2:
-        os.system("cls || clear")
-        cosseno()
-    elif user == 3:
-        os.system("cls || clear")
-        tangente()
-    elif user == 4:
-        os.system("cls || clear")
-        hipotenusa()
-    elif user == 5:
-        os.system("cls || clear")
-        numero_de_pi()
-    elif user == 0:
-        sleep(0.5)
-        print('Voltando..')
-        sleep(0.5)
-        rodando = 'termino'
-        os.system("cls || clear")
-        import main
+    except Exception:
+            os.system("cls || clear")
+            Object()
+            print('ERROR: Isto que você digitou está incorreto. Digite um número inteiro!')
     else:
-        Object()
-        print('Ops.. Tente novamente!')
+        if user == 1:
+            os.system("cls || clear")
+            seno()
+        elif user == 2:
+            os.system("cls || clear")
+            cosseno()
+        elif user == 3:
+            os.system("cls || clear")
+            tangente()
+        elif user == 4:
+            os.system("cls || clear")
+            hipotenusa()
+        elif user == 5:
+            os.system("cls || clear")
+            numero_de_pi()
+        elif user == 0:
+            sleep(0.5)
+            print('Voltando..')
+            sleep(0.5)
+            rodando = 'termino'
+            os.system("cls || clear")
+            import main
+        else:
+            os.system("cls || clear")
+            Object()
+            print('ERROR: Esta opção não existe!')

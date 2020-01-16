@@ -121,6 +121,7 @@ while rodando != 'terminado':
 	#main
 	Object()
 	print('!!Opções Disponíveis!!')
+	print('ATENÇÃO: CASO O VALOR SEJA COM VÍRGULA, USE PONTO')
 	print('1 - Soma')
 	print('2 - Subtração')
 	print('3 - Multiplicação')
@@ -132,37 +133,41 @@ while rodando != 'terminado':
 	Object()
 	try:
 		user = int(input('Escolha: '))
-	except ValueError:
-		print('ValueError')
-	
-	if user == 1:
+	except Exception:
 		os.system("cls || clear")
-		soma()
-	elif user == 2:
-		os.system("cls || clear")
-		subtracao()
-	elif user == 3:
-		os.system("cls || clear")
-		multiplicacao()
-	elif user == 4:
-		os.system("cls || clear")
-		divisao()
-	elif user == 5:
-		os.system("cls || clear")
-		exponenciacao()
-	elif user == 6:
-		os.system("cls || clear")
-		raiz_quadrada()
-	elif user == 7:
-		os.system("cls || clear")
-		fatorial()
-	elif user == 0:
-		sleep(0.5)
-		print('Voltando..')
-		sleep(0.5)
-		rodando = 'termino'
-		os.system("cls || clear")
-		import main
-	else:
 		Object()
-		print('Ops.. Tente novamente!')
+		print('ERROR: Isto que você digitou está incorreto. Digite um número inteiro!')
+  
+	else:
+		if user == 1:
+			os.system("cls || clear")
+			soma()
+		elif user == 2:
+			os.system("cls || clear")
+			subtracao()
+		elif user == 3:
+			os.system("cls || clear")
+			multiplicacao()
+		elif user == 4:
+			os.system("cls || clear")
+			divisao()
+		elif user == 5:
+			os.system("cls || clear")
+			exponenciacao()
+		elif user == 6:
+			os.system("cls || clear")
+			raiz_quadrada()
+		elif user == 7:
+			os.system("cls || clear")
+			fatorial()
+		elif user == 0:
+			sleep(0.5)
+			print('Voltando..')
+			sleep(0.5)
+			rodando = 'termino'
+			os.system("cls || clear")
+			import main
+		else:
+			os.system("cls || clear")
+			Object()
+			print('ERROR: Esta opção não existe!')
