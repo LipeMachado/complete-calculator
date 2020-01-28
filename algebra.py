@@ -12,111 +12,138 @@ while rodando != 'terminado':
 	linha = lambda : print('-'*15)
 	
 	def soma():
-		Object()
-		print('Digite o primeiro número para soma.')
-		try:
-			primeiro_numero = float(input(''))
-		except ValueError:
-			print('ValueError')
-		print('+')
-		print('Digite o segundo número para soma.')
-		try:
-			segundo_numero = float(input(''))
-		except ValueError:
-			print('ValueError')
-		linha()
-		return print(primeiro_numero + segundo_numero)
+		while True:
+			Object()
+			try:
+				print('Digite o primeiro número para soma.')
+				primeiro_numero = float(input(''))
+				print('+')
+				print('Digite o segundo número para soma.')
+				segundo_numero = float(input(''))
+			except Exception:
+				os.system("cls || clear")
+				Object()
+				print("ERROR: Digite um número válido.")
+				soma()
+			else:
+				linha()
+				return print(primeiro_numero + segundo_numero)
+			break
 		
 	def subtracao():
-		Object()
-		print('Digite o primeiro número para subtração.')
-		try:
-			primeiro_numero = float(input(''))
-		except ValueError:
-			print('ValueError')
-		print('-')
-		print('Digite o segundo número para subtração.')
-		try:
-			segundo_numero = float(input(''))
-		except ValueError:
-			print('ValueError')	
-		linha()
-		return print(primeiro_numero - segundo_numero)
+		while True:
+			Object()
+			try:
+				print('Digite o primeiro número para subtração.')
+				primeiro_numero = float(input(''))
+				print('-')
+				print('Digite o segundo número para subtração.')
+				segundo_numero = float(input(''))
+			except Exception:
+				os.system("cls || clear")
+				Object()
+				print('ERROR: Digite um valor válido.')
+				subtracao()	
+			else:
+				linha()
+				return print(primeiro_numero - segundo_numero)
+			break
 		
 	def multiplicacao():
-		Object()
-		print('Digite o primeiro número para multiplicação.')
-		try:
-			primeiro_numero = float(input(''))
-		except ValueError:
-			print('ValueError')
-		print('X')
-		print('Digite o segundo número para multiplicação.')
-		try:
-			segundo_numero = float(input(''))
-		except ValueError:
-			print('ValueError')
-		linha()
-		return print(primeiro_numero * segundo_numero)
+		while True:
+			Object()
+			try:
+				print('Digite o primeiro número para multiplicação.')
+				primeiro_numero = float(input(''))
+				print('X')
+				print('Digite o segundo número para multiplicação.')
+				segundo_numero = float(input(''))
+			except Exception:
+				os.system("cls || clear")
+				Object()
+				print('ERROR: Digite um valor válido.')
+				multiplicacao()
+			else:
+				linha()
+				return print(primeiro_numero * segundo_numero)
+			break
 		
 	def divisao():
-		Object()
-		print('Digite o primeiro número para divisão.')
-		try:
-			primeiro_numero = float(input(''))
-		except ValueError:
-			print('ValueError')
-		print('/')
-		print('Digite o segundo número para divisão.')
-		try:
-			segundo_numero = float(input(''))
-		except ValueError:
-			print('ValueError')	
-		linha()
-		return print(primeiro_numero / segundo_numero)
-		
+		while True:
+			Object()
+			try:
+				print('Digite o primeiro número para divisão.')
+				primeiro_numero = float(input(''))
+				print('/')
+				print('Digite o segundo número para divisão.')
+				segundo_numero = float(input(''))
+			except Exception:
+				os.system("cls || clear")
+				Object()
+				print("ERROR: Digite um valor válido.")
+				divisao()
+			else:
+				linha()
+				return print(primeiro_numero / segundo_numero)
+			break
+
 	def exponenciacao():
-		Object()
-		print('Digite o primeiro número para exponenciação.')
-		try:
-			primeiro_numero = float(input(''))
-		except ValueError:
-			print('ValueError')
-		print('aª')
-		print('Digite o segundo número para exponenciação.')
-		try:
-			segundo_numero = float(input(''))
-		except ValueError:
-			print('ValueError')
-		linha()
-		return print(primeiro_numero ** segundo_numero)
-		
+		while True:
+			Object()
+			try:
+				print('Digite o primeiro número para exponenciação.')
+				primeiro_numero = float(input(''))
+				print('aª')
+				print('Digite o segundo número para exponenciação.')
+				segundo_numero = float(input(''))
+			except Exception:
+				os.system("cls || clear")
+				Object()
+				print('ERROR: Digite um valor válido.')
+				exponenciacao()
+			else:
+				linha()
+				return print(primeiro_numero ** segundo_numero)
+			break
+
 	def raiz_quadrada():
-		Object()
-		print('Digite o valor da raiz.')
-		print('√')
-		try:
-			valor_da_raiz = float(input(''))
-		except ValueError:
-			print('ValueError')
-		resultado = sqrt(valor_da_raiz)
-		linha()
-		return print(resultado)
-	
+		while True:
+			Object()
+			try:
+				print('Digite o valor da raiz.')
+				print('√')
+				valor_da_raiz = float(input(''))
+				resultado = sqrt(valor_da_raiz)
+			except Exception:
+				os.system("cls || clear")
+				Object()
+				print("ERROR: Digite um valor válido.")
+				raiz_quadrada()
+			else:
+				linha()
+				return print(resultado)
+			break	
+
 	def fatorial():
-		Object()
-		print('Digite o valor do fatorial.')
-		try:
-			valor_do_fatorial = int(input(''))
-		except ValueError:
-			print('ValueError')
-		contador = 1
-		resultado = 1
-		
-		while contador <= valor_do_fatorial:
-			resultado *= contador
-			contador += 1
-		return print(resultado)
+		while True:
+			Object()
+			try:	
+				print('Digite o valor do fatorial.')
+				valor_do_fatorial = int(input(''))
+				contador = 1
+				resultado = 1
+				while contador <= valor_do_fatorial:
+					resultado *= contador
+					contador += 1
+			except Exception:
+				os.system("cls || clear")
+				Object()
+				print("ERROR: Digite um número válido.")
+				fatorial()
+			else:
+				linha()
+				return print(resultado)
+			break
 
 	#main
 	Object()
