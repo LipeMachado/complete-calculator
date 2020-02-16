@@ -2,107 +2,119 @@
 import os
 from time import sleep
 
-rodando = 'rodando'
-
-while rodando != 'termino':
+while True:
     
-    Object = lambda : print('-=-'*10)
-    
+    Object = lambda : print('-=-'*10)    
     linha = lambda : print('-'*15)
 
     def area_retangulo():
-        Object()
-        sleep(0.5)
-        print('Digite o valor de lado:')
-        try:
-            lado = float(input(''))
-        except ValueError:
-            print('ValueError')
-        print('Digite o valor da altura:')
-        try:
-            altura = float(input(''))
-        except ValueError:
-            print('ValueError')
-        linha()
-        return print(f'{lado*altura} cm²')
+        while True:
+            Object()
+            try:
+                print('Digite o valor de lado:')
+                lado = float(input(''))
+                print('Digite o valor da altura:')
+                altura = float(input(''))
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                area_retangulo()
+            else:
+                linha()
+                return print(f'{lado*altura} cm²')
+            break
 
     def area_quadrado():
-        Object()
-        sleep(0.5)
-        print('Digite o valor do lado:')
-        try:
-            lado = float(input(''))
-        except ValueError:
-            print('ValueError')
-        linha()
-        return print(f'{lado**2} cm²')
+        while True:
+            Object()
+            try:
+                print('Digite o valor do lado:')
+                lado = float(input(''))
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                area_quadrado()
+            else:
+                linha()
+                return print(f'{lado**2} cm²')
+            break
 
     def area_triangulo():
-        Object()
-        sleep(0.5)
-        print('Digite o valor da base:')
-        try:
-            base = float(input(''))
-        except ValueError:
-            print('ValueError')
-        print('Digite o valor da altura:')
-        try:
-            altura = float(input(''))
-        except ValueError:
-            print('ValueError')
-        resultado = (base*altura) / 2
-        linha()
-        return print(f'{resultado} cm²')
+        while True:
+            Object()
+            try:
+                print('Digite o valor da base:')
+                base = float(input(''))
+                print('Digite o valor da altura:')
+                altura = float(input(''))
+                resultado = (base*altura) / 2
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                area_triangulo()
+            else:
+                linha()
+                return print(f'{resultado} cm²')
+            break
 
     def area_trapezio():
-        Object()
-        sleep(0.5)
-        print('Digite o valor da base maior:')
-        try:
-            base_maior = float(input(''))
-        except ValueError:
-            print('ValueError')
-        print('Digite o valor da base menor:')
-        try:
-            base_menor = float(input(''))
-        except ValueError:
-            print('ValueError')
-        print('Digite o valor da altura:')
-        try:
-            altura = float(input(''))
-        except ValueError:
-            print('ValueError')
-        resultado = ((base_maior + base_menor)* altura) / 2
-        linha()
-        return print(f'{resultado} cm²')
+        while True:
+            Object()
+            try:
+                print('Digite o valor da base maior:')
+                base_maior = float(input(''))
+                print('Digite o valor da base menor:')
+                base_menor = float(input(''))
+                print('Digite o valor da altura:')
+                altura = float(input(''))
+                resultado = ((base_maior + base_menor)* altura) / 2
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                area_trapezio()
+            else:
+                linha()
+                return print(f'{resultado} cm²')
+            break
 
     def area_losango():
-        Object()
-        sleep(0.5)
-        print('Digite o valor da diagonal maior:')
-        try:
-            diagonal_maior = float(input(''))
-        except ValueError:
-            print('ValueError')
-        print('Digite o valor da diagonal menor:')
-        try:
-            diagonal_menor  = float(input(''))
-        except ValueError:
-            print('ValueError')
-        resultado = (diagonal_maior * diagonal_menor) / 2
-        linha()
-        return print(f'{resultado} cm²')
+        while True:
+            Object()
+            try:
+                print('Digite o valor da diagonal maior:')
+                diagonal_maior = float(input(''))
+                print('Digite o valor da diagonal menor:')
+                diagonal_menor  = float(input(''))
+                resultado = (diagonal_maior * diagonal_menor) / 2
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                area_losango()
+            else:
+                linha()
+                return print(f'{resultado} cm²')
+            break
 
     def area_circulo():
-        Object()
-        sleep(0.5)
-        print('Digite o valor do raio:')
-        try:
-            raio = float(input(''))
-        except ValueError:
-            print('ValueError')
-        linha()
-        return print(f'{raio**2} π cm²')
+        while True:
+            Object()
+            try:
+                print('Digite o valor do raio:')
+                raio = float(input(''))
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                area_circulo()
+            else:
+                linha()
+                return print(f'{raio**2} π cm²')
+            break
 
     #main
     Object()
@@ -148,6 +160,7 @@ while rodando != 'termino':
             rodando = 'termino'
             os.system("cls || clear")
             import main
+            break
         else:
             os.system("cls || clear")
             Object()

@@ -3,12 +3,9 @@ import os
 from time import sleep
 from math import sqrt
 
-rodando = 'rodando'
-
-while rodando != 'terminado':
+while True:
 	
-	Object = lambda : print('-=-'*10)
-	
+	Object = lambda : print('-=-'*10)	
 	linha = lambda : print('-'*15)
 	
 	def soma():
@@ -194,6 +191,7 @@ while rodando != 'terminado':
 			rodando = 'termino'
 			os.system("cls || clear")
 			import main
+			break
 		else:
 			os.system("cls || clear")
 			Object()

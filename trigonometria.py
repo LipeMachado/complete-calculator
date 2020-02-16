@@ -3,58 +3,76 @@ from time import sleep
 import os
 from math import sin, cos, tan, hypot, pi
 
-rodando = 'rodando'
-
-while rodando != 'termino':
+while True:
 
     Object = lambda : print('-=-'*10)
-    
     linha = lambda : print('-'*15)
 
     def seno():
-        Object()
-        print('Digite o número para saber seu Seno:')
-        try:
-            numero = float(input(''))
-        except ValueError:
-            print('ValueError')
-        linha()
-        return print(f'{sin(numero)}')
+        while True:
+            Object()
+            try:
+                print('Digite o número para saber seu Seno:')
+                numero = float(input(''))
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                seno()
+            else:
+                linha()
+                return print(f'{sin(numero)}')
+            break
 
     def cosseno():
-        Object()
-        print('Digite o nnúmero para saber seu Cosseno:')
-        try:
-            numero = float(input(''))
-        except ValueError:
-            print('ValueError')
-        linha()
-        return print(f'{cos(numero)}')
+        while True:
+            Object()
+            try:
+                print('Digite o nnúmero para saber seu Cosseno:')
+                numero = float(input(''))
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                cosseno()
+            else:
+                linha()
+                return print(f'{cos(numero)}')
+            break
 
     def tangente():
-        Object()
-        print('Digite o número para saber sua Tangente:')
-        try:
-            numero = float(input(''))
-        except ValueError:
-            print('ValueError')
-        linha()
-        return print(f'{tan(numero)}')
+        while True:
+            Object()
+            try:
+                print('Digite o número para saber sua Tangente:')
+                numero = float(input(''))
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                tangente()
+            else:
+                linha()
+                return print(f'{tan(numero)}')
+            break
 
     def hipotenusa():
-        Object()
-        print('Digite o número do cateto oposto:')
-        try:
-            cateto_oposto = float(input(''))
-        except ValueError:
-            print('ValueError')
-        sleep(0.5)
-        print('Digite o número do cateto adjacente:')
-        try:
-            cateto_adjacente = float(input(''))
-        except ValueError:
-            print('ValueError')
-        return print(f'{hypot(cateto_oposto, cateto_adjacente)}')
+        while True:
+            Object()
+            try:
+                print('Digite o número do cateto oposto:')
+                cateto_oposto = float(input(''))
+                print('Digite o número do cateto adjacente:')
+                cateto_adjacente = float(input(''))
+            except Exception:
+                os.system("cls || clear")
+                Object()
+                print("ERROR: Digite um número válido.")
+                hipotenusa()
+            else:
+                linha()
+                return print(f'{hypot(cateto_oposto, cateto_adjacente)}')
+            break
 
     def numero_de_pi():
         Object()
@@ -102,6 +120,7 @@ while rodando != 'termino':
             rodando = 'termino'
             os.system("cls || clear")
             import main
+            break
         else:
             os.system("cls || clear")
             Object()

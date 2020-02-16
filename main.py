@@ -2,20 +2,16 @@
 import os
 from time import sleep
 
-print('-=-'*10)
-sleep(0.2)
-print('Calculadora feita por:')
-print('Telegram:        @LipeMachado')
-print('Canal/Telegram:  @coursesprogrammerandhacker')
-print('GitHub:          LipeMachado')
-print('Qualquer bug ou dúvida pergunte.')
-sleep(0.2)
+while True:
 
-rodando = 'rodando'
-
-while rodando != 'termino':
-    
     Object = lambda : print('-=-'*10)
+
+    Object()
+    print('Calculadora feita por:')
+    print('Telegram:        @LipeMachado')
+    print('Canal/Telegram:  @coursesprogrammerandhacker')
+    print('GitHub:          LipeMachado')
+    print('Qualquer bug ou dúvida pergunte.')
 
     Object()
     print('!!Bem-Vindo!!')
@@ -43,11 +39,10 @@ while rodando != 'termino':
             os.system("cls || clear")
             import trigonometria
         elif user == 0:
-            sleep(0.5)
             print('Saindo.... BYE, BYE')
             sleep(0.55)
             os.system("cls || clear")
-            rodando = 'termino'
+            break
         else:
             os.system("cls || clear")
             Object()
