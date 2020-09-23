@@ -114,7 +114,6 @@ while True:
             os.system("cls || clear")
             numero_de_pi()
         elif user == 0:
-            sleep(0.5)
             print('Voltando..')
             sleep(0.5)
             rodando = 'termino'

@@ -38,6 +38,9 @@ while True:
         elif user == 3:
             os.system("cls || clear")
             import trigonometria
+        elif user == 4:
+            os.system("cls || clear")
+            import fisica
         elif user == 0:
             print('Saindo.... BYE, BYE')
             sleep(0.55)
