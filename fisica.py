@@ -81,6 +81,7 @@ while True:
     print('2 - Conversão de Fahrenheit para Celsius')
     print('3 - Conversão de Celsius para Kelvin')
     print('4 - Conversão de Kelvin para Celsius')
+    print('0 - Voltar')
     Object()
     
     try:
@@ -102,6 +103,13 @@ while True:
         elif user == 4:
             os.system("cls || clear")
             kelvin_celsius()
+        elif user == 0:
+            print('Voltando..')
+            sleep(0.5)
+            rodando = 'termino'
+            os.system("cls || clear")
+            import main
+            break
         else:
             os.system("cls || clear")
             Object()

@@ -18,6 +18,7 @@ while True:
     print('1 - Algebra - Matemática Básica')
     print('2 - Geometria Plana')
     print('3 - Trigonometria')
+    print('4 - Fisica')
     print('0 - Sair')
     Object()
     
